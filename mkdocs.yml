@@ -1,0 +1,33 @@
+site_name: MSC Open Data / <br>Données ouvertes du SMC
+
+# name of the remote set in your fork where the documentation will actually be deployed
+# validate value with `git remote -v`, it must be pointing to http://github.com/eccc-msc/open-data.git
+remote_name: github
+
+# Related documentation: https://www.mkdocs.org/user-guide/configuration/#remote_branch
+
+nav:
+    - Available data /<br>Données disponibles: msc-data/readme_en.md
+    - Data access /<br>Accès aux données:
+        - MSC GeoMet /<br>GeoMet du SMC: msc-geomet/readme_en.md
+        - MSC Datamart /<br>Datamart du SMC: msc-datamart/readme_en.md
+        - Cost-recovered services /<br>Services à recouvrement de coûts: cost-recovered/readme_en.md
+    - Usage and tutorials / <br>Utilisation et tutoriels:
+        - Usage overview /<br>Aperçu de l'utilisation: usage/readme_en.md
+        - Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS: usage/tutorial_WMS_QGIS_en.md
+        - Create interactive web maps /<br>Créer des cartes web interactives: usage/tutorial_web-maps_en.md
+        - Add raw data to QGIS /<br>Ajouter des données brutes à QGIS: usage/tutorial_raw-data_QGIS_en.md
+        - API usage from a Python script /<br>Utiliser l'API dans un script Python: usage/use-case_arthur/use-case_arthur_en/
+        - Use OGC API Features in QGIS /<br>Utiliser OGC API Features dans QGIS: usage/tutorial_OAFeat_QGIS_en.md
+        - API technical doc /<br>Doc technique de l'API: msc-geomet/web-services_en.md
+    - Contact us /<br>Contactez-nous: https://weather.gc.ca/mainmenu/contact_us_e.html
+
+theme:
+    name: mkdocs
+    custom_dir: custom_theme/
+
+extra_css: [css/extra.css]
+
+plugins:
+  - search
+  - mkdocs-jupyter
