@@ -1,4 +1,4 @@
-geojson = {
+var geojson = {
 "type": "FeatureCollection",
 "name": "radar-coverage_2020-08-13T1550_MMHR_inverse",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
